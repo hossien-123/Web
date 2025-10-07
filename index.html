@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MJn-Shop | فروشگاه موبایل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="bg-clouds"></div>
+    <img src="assets/logo.png" alt="MJn Logo" class="logo">
+</header>
+<main class="products">
+    <div class="product-card">
+      <img src="assets/products/iphone16.jpg" alt="iPhone 16">
+      <h3>Apple iPhone 16</h3>
+      <p>صفحه‌نمایش ۶.۵ اینچ | حافظه ۲۵۶ گیگابایت | رم ۱۲ گیگابایت</p>
+      <span class="price">۴,۱۹۵,۸۰۰ تومان</span>
+      <button onclick="addToCart('Apple iPhone 16', 4195800)">خرید</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/products/xiaomi17pro.jpg" alt="Xiaomi 17 Pro">
+      <h3>Xiaomi 17 Pro Max</h3>
+      <p>صفحه‌نمایش ۶.۹ اینچ | حافظه ۵۱۲ گیگابایت | رم ۱۲ گیگابایت</p>
+      <span class="price">۴,۱۹۵,۸۰۰ تومان</span>
+      <button onclick="addToCart('Xiaomi 17 Pro Max', 4195800)">خرید</button>
+    </div>
+</main>
+<section class="checkout">
+    <h2>فرم سفارش</h2>
+    <form id="checkoutForm">
+      <input type="text" name="name" placeholder="نام" required>
+      <input type="email" name="email" placeholder="ایمیل" required>
+      <input type="text" name="product" id="productInput" placeholder="محصول" required>
+      <input type="text" name="address" placeholder="آدرس" required>
+      <input type="number" name="amount" id="amountInput" placeholder="مبلغ" required>
+      <button type="button" onclick="handlePayment()">پرداخت</button>
+    </form>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

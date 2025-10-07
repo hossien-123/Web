@@ -1,0 +1,12 @@
+body { margin:0; font-family:sans-serif; background:#111; color:#eee; }
+.header { position:relative; text-align:center; padding:30px; }
+.logo { width:150px; z-index:2; position:relative; }
+.bg-clouds { position:absolute; top:0; left:50%; transform:translateX(-50%);
+             width:300px; height:300px; background: url('assets/bg-clouds.jpg') no-repeat center/cover; opacity:0.2; z-index:1; }
+.products { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px; }
+.product-card { background:#222; padding:15px; border-radius:10px; width:200px; text-align:center; }
+.product-card img { width:100%; border-radius:10px; }
+button { background:#ff4081; border:none; padding:10px; border-radius:5px; cursor:pointer; color:#fff; }
+button:hover { background:#e73370; }
+.checkout { padding:20px; max-width:400px; margin:0 auto; }
+.checkout input { display:block; width:100%; margin:10px 0; padding:10px; border-radius:5px; border:none; }
